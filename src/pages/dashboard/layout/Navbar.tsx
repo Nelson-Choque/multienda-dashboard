@@ -28,7 +28,7 @@ export const Navbar = () => {
           <Item
             icon={"fa-solid fa-user"}
             title={"Cerrar Sesion"}
-            linkTo="http://localhost:5174/"
+            linkTo={"/"}
           ></Item>
         </li>
       </ul>
