@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: { ...colors.pink, DEFAULT: colors.pink[600] },
+        primary: { ...colors.sky, DEFAULT: colors.sky[700] },
       },
     },
   },
