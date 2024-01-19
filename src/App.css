@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .bg-primary{
+        @apply bg-sky-700 text-white rounded-2xl
+    }
+    .icon{
+        @apply text-2xl
+    }
+}
+
+
+.min-h-screen-85{
+    min-height: 85vh;
+}
+
+
+.animation-body{
+
+    animation: AnimationBody 1s ease forwards ;
+    
+}
+
+@keyframes AnimationBody  {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+}
+/* ---------navbar-dashboard---------- */
+
+.grid-dashboard{
+
+    grid-template-columns: 1fr;
+}
+
+@media (min-width:640px) {
+
+    .grid-dashboard{
+
+        display: grid;
+        grid-template-columns: max-content 1fr;
+    }
+}
+
+
+.grid-navbar{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    justify-content: space-between;
+}
+
+@media (min-width:1024px) {
+
+    .grid-navbar{
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+    }
+    
+}
+
+#menu:checked ~ #menuMobile{
+    display: block;
+    background-color: white;
+    left: 0;
+}
+    
+
+@media (min-width:1024px) {
+
+    #menu:checked ~ #menuMobile{
+        display: flex;
+    }
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
